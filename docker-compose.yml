@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+    meilisearch:
+        image: getmeili/meilisearch
+        command: ./meilisearch --master-key=masterKey --no-analytics
+        ports:
+            -   target: 7700
+                published: 7700
+                protocol: tcp
+    # app:
+    #     build: .
+    #     container_name: meilisearch-test
+    #     restart: always
+    #     ports:
+    #         - 8091:8091
+    #         - 9229:9229
+    #     volumes:
+    #         - .:/usr/app
+    #     links:
+    #         - meilisearch
+    #     depends_on:
+    #         - meilisearch

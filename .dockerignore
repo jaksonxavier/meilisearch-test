@@ -1,0 +1,7 @@
+node_modules
+data.ms
+.git
+src/database/db.sqlite3
+tmp/*
+
+yarn.lock

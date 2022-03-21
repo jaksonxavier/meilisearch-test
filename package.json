@@ -1,0 +1,27 @@
+{
+  "name": "meilisearch-test",
+  "version": "1.0.0",
+  "description": "test meilisearch lightning fast search engine",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon src/index.js",
+    "migrate": "yarn knex migrate:up",
+    "seed": "yarn knex seed:run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vscode/sqlite3": "^5.0.7",
+    "better-sqlite3": "^7.5.0",
+    "crypto": "^1.0.1",
+    "csv-parse": "^5.0.4",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "knex": "^1.0.4",
+    "meilisearch": "^0.25.0",
+    "multer": "^1.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

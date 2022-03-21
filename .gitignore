@@ -1,0 +1,4 @@
+node_modules
+data.ms
+src/database/db.sqlite3
+tmp/*
